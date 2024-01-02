@@ -3,3 +3,9 @@
     align-items: center;
     justify-content: center;
 }
+
+@media only screen and (max-width: 425px) {
+    h1 {
+        font-size: 30px;
+    }
+}
