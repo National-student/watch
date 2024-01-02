@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Clock.css"
 
 const Clock = () => {
   const [time, setTime] = useState(new Date());
@@ -16,8 +17,8 @@ const Clock = () => {
   const seconds = time.getSeconds().toString().padStart(2, "0");
   const milliseconds = time.getMilliseconds().toString().padStart(3, "0");
   return (
-    <div>
-      <h1 style={{fontSize: "50px"}}>{`${hours}:${minutes}:${seconds}:${milliseconds}`}</h1>
+    <div className="clock_watch">
+      <h1 style={{fontSize: "60px"}}>{`${hours}:${minutes}:${seconds}:${milliseconds}`}</h1>
     </div>
   );
 };
