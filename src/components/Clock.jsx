@@ -17,7 +17,7 @@ const Clock = () => {
   const milliseconds = time.getMilliseconds().toString().padStart(3, "0");
   return (
     <div>
-      <h1 style={{fontSize: "70px"}}>{`${hours}:${minutes}:${seconds}:${milliseconds}`}</h1>
+      <h1 style={{fontSize: "50px"}}>{`${hours}:${minutes}:${seconds}:${milliseconds}`}</h1>
     </div>
   );
 };
